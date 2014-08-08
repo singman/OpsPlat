@@ -73,8 +73,8 @@ public class UnZipFile {
             InputStream stdErr = new StreamGobbler(session.getStderr());
             InputStream stdOut = new StreamGobbler(session.getStdout());
             String line = null;
-            BufferedReader brError = new BufferedReader(new InputStreamReader(stdErr));
-            BufferedReader brStdout = new BufferedReader(new InputStreamReader(stdOut));
+            BufferedReader brError = new BufferedReader(new InputStreamReader(stdErr,"utf-8"));
+            BufferedReader brStdout = new BufferedReader(new InputStreamReader(stdOut,"utf-8"));
 
             while ((line = brError.readLine()) != null){
                 System.out.println(line);

@@ -1,5 +1,6 @@
 package com.generalsoft.singman;
 
+import com.generalsoft.singman.utils.FileUpload;
 import com.jcraft.jsch.ChannelSftp;
 
 import java.io.File;
